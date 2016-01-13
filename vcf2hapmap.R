@@ -18,10 +18,12 @@ strand <- "+"
 assembly <- NA
 center <- NA
 protLSID <- NA
+assayLSID <- NA
+panelLSID <- NA
 Qcode <- NA
 genotype_df <- vcf[c(-1:-10)]
 
-hapmap <- cbind(rs, alleles, chrom, pos, strand, assembly, center, protLSID, Qcode, genotype_df)
+hapmap <- cbind(rs, alleles, chrom, pos, strand, assembly, center, protLSID, assayLSID, panelLSID, Qcode, genotype_df)
 colnames(hapmap)[[1]]<-"rs#"
 colnames(hapmap)[[6]]<-"assembly#"
 
